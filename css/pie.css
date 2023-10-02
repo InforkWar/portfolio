@@ -40,9 +40,18 @@
 
 
 @media screen and (max-width:768px) {
+
+    .footer{
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
     .pie{
-        
-        padding: 32px 32px 20px 32px;
+        padding: 0;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
     }
 
     .pie-parrafo{
