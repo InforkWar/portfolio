@@ -1,0 +1,95 @@
+.syh{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #a9bacb, #435465);
+}
+
+.syh-contenedor{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    
+}
+
+.syh-titulo{
+    color: #ffcc24;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 0 0 10px black;
+    margin-bottom: 32px;
+}
+
+.syh-contenedor-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end ;
+    
+    width: 100%;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.grow{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.grow:hover{
+    transform: scale3d(1.5, 1.5, 0.3);
+        -webkit-transform: scale3d(1.5, 1.5, 0.3);
+        -moz-transform: scale3d(1.5, 1.5, 0.3);
+}
+
+.syh-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    min-width: fit-content;
+    height: 120px;
+    background-color: transparent;
+}
+
+.syh-items--img1{
+    width: 100%;
+    height: 100%;
+}
+
+.syh-items--img{
+    width: 90%;
+    height: 90%;
+    
+}
+
+.syh-items--parrafo{
+    color: whitesmoke;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:768px) {
+
+    .syh-contenedor{
+        width: 100%;
+    }
+
+    .syh-contenedor-items{
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+
+    .syh-items{
+        width: 40%;
+        max-width: 150px;
+        margin-bottom: 30px;
+    }
+}
